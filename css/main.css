@@ -1,0 +1,46 @@
+/*
+
+    CSS Rules' Order
+
+    1.定位属性: position, float, z-index, clear
+    2.盒模型相关属性: padding, margin, display, width, height, border
+    3.字体相关
+    4.CSS2 视觉相关属性 (background)
+    5.CSS3 属性 (border-radius, box-shadow)
+
+*/
+
+body {
+    font-family: 'Open Sans','helvetica',arial,sans-serif;
+
+    /*fixed background*/
+    background: fixed center url(../img/bg5.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 960px;   /*convenient value for screen size and dividing*/
+    margin: 100px auto;
+    background-color: #D8D8D8;
+}
+
+.main-header {
+    text-align: center;
+    padding: 1px; /*disable margin collapsing*/
+    background-image: url(../img/banner.jpg);
+}
+
+.main-header h1{
+    color: white;
+    font-weight: 300;
+    font-size: 50px;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+}
+
+.main-header__avatar {
+    display: block;
+    margin: -70px auto 10px;
+    border: 3px solid white;
+    border-radius: 999px;
+    box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+}
