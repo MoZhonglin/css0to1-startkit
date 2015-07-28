@@ -10,6 +10,14 @@
 
 */
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Open Sans','helvetica',arial,sans-serif;
     font-weight: 300;
@@ -148,4 +156,37 @@ li.whatido__skill {
 
 .info-section__description {
     font-style: italic;
+}
+
+.education-experience__list {
+    list-style: none;
+    text-align: left;
+}
+
+.education-experience__list li{
+    padding: 30px;
+}
+
+.education-experience img {
+    float: left;
+    width: 180px;
+    margin-right: 50px;
+}
+
+.education-experience__list__description {
+    overflow: hidden;
+}
+
+.photos__list {
+    list-style: none;
+}
+
+.photos__list li {
+    float: left;
+    width: 25%;
+}
+
+.photos__list img{
+    width: 100%;
+    padding: 10px;
 }
